@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  min-width: 360px;
+}
+
+nav {
+  z-index: 999;
+}
+
+.navbar {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.logo {
+  max-width: 180px;
+  width: 100%;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  margin: 7px;
+  transition: 0.3s;
+}
+
+.navbar-light .navbar-toggler {
+  color: white;
+  border-color: rgba(0, 0, 0, .1);
+  background-color: orange;
+}
+
+.nav-link:hover {
+  background: orange;
+  border-radius: .3rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+}
+
+.navbar-brand h5 {
+  color: white;
+}
+
+.blesak {
+  font-size: 3em;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.momenat {
+  color: white;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.my-carosel {
+  margin-top: -160px;
+}
+
+.carousel-caption {
+  width: 550px;
+  left: 15%;
+  top: 50% !important;
+  transform: translateY(-50%);
+  text-align: left;
+  bottom: initial;
+}
+
+.carousel-caption p {
+  letter-spacing: 4px;
+}
+
+.naslov {
+  letter-spacing: 2px;
+  padding-bottom: 70px;
+}
+
+.naslov, .opis-izbor {
+  padding-bottom: 30px;
+}
+
+/***query***/
+@media (max-width: 992px) {
+  .w-100 {
+    width: 100% !important;
+    height: fit-content;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  .my-carosel {
+    margin-top: -390px;
+  }
+
+  .blesak {
+    font-size: 2em;
+    margin: 0;
+  }
+
+  .momenat {
+    letter-spacing: 2px;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    text-align: center;
+  }
+
+  .my-collapse {
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+
+  .media-body h5 {
+    padding-bottom: 5px;
+    padding-top: 10px;
+  }
+
+  .partneri-lista {
+    flex-direction: column;
+  }
+
+  .partneri {
+    padding-bottom: 50px;
+  }
+
+  .align-items-baseline {
+    align-items: center !important;
+    justify-content: space-between;
+  }
+
+  .my-carosel {
+    margin-top: -440px;
+  }
+}
+
+@media (max-width: 768px) {
+  .w-100 {
+    width: 100% !important;
+    height: fit-content;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  .carousel-caption p {
+    width: 350px;
+  }
+
+  .carousel-caption {
+    top: 55% !important;
+  }
+
+  .ml-3 {
+    margin-left: 1rem !important;
+  }
+
+  .my-carosel {
+    margin-top: -440px;
+  }
+
+  .photos li {
+    padding: 10px;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .w-100 {
+    width: 100% !important;
+    height: fit-content;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  .carousel-caption p {
+    width: 320px;
+  }
+
+  .my-carosel {
+    margin-top: -465px;
+  }
+}
+
+@media (max-width: 410px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+}
+
+/****layout***/
+#zasto {
+  padding-top: 150px;
+}
+
+#galerija {
+  padding-bottom: 150px;
+  padding-top: 100px;
+  background: #f6f6f6;
+}
+
+#klijenti {
+  padding-bottom: 200px;
+  padding-top: 200px;
+}
+
+#contact {
+  padding-bottom: 100px;
+  padding-top: 200px;
+  background: #f6f6f6;
+}
+
+.jumbotron {
+  background-image: url(../img/pozadina.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-bottom: 0;
+  margin-top: 150px;
+  color: white;
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+
+.ikonice-1, .ikonice-2 {
+  padding-top: 25px;
+}
+
+.btn-primary {
+  background: transparent;
+  border-color: orange;
+}
+
+.btn-primary:hover {
+  background-color: orange;
+  border-color: white;
+}
+
+.photos {
+  padding-inline-start: 0;
+}
+
+.photos li {
+  list-style: none;
+  float: left;
+  margin: 0 auto;
+  padding: 10px;
+  width: 33.33%;
+}
+
+.img-thumbnail {
+  transition: transform .2s;
+  /* Animation */
+  margin: 0 auto;
+  border-radius: none;
+}
+
+.img-thumbnail:hover {
+  transform: scale(1.1);
+}
+
+.clients {
+  justify-content: space-between;
+  list-style: none;
+}
+
+.partneri {
+  width: 100%;
+}
+
+.page-scroll {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -webkit-transform;
+  -moz-transition-duration: 1s;
+}
